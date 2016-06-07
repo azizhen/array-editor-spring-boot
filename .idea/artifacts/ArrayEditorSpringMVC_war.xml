@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ArrayEditorSpringMVC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="arrayeditor.war">
+      <element id="artifact" artifact-name="ArrayEditorSpringMVC:war exploded" />
+    </root>
+  </artifact>
+</component>
