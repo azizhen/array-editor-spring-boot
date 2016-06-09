@@ -14,7 +14,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * Created by aziz on 2016/06/07.
+ * Controller responsible for exposing functionality via REST
+ *
+ * @author  Aziz Hendricks
+ * @version 1.0
+ * @since   2016-09-06
  */
 
 @Api(value = "/arrayeditor", description = "Array Editor API")

@@ -4,7 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Created by aziz on 2016/06/07.
+ * Java main class responsible for enabling Spring Boot on startup
+ *
+ * @author  Aziz Hendricks
+ * @version 1.0
+ * @since   2016-09-06
  */
 @SpringBootApplication
 public class Application {

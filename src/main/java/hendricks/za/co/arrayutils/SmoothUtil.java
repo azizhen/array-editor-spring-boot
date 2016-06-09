@@ -1,16 +1,20 @@
 package hendricks.za.co.arrayutils;
 
 /**
- * Created by aziz on 2016/06/08.
+ * Array utility responsible for Smoothing arrays
+ *
+ * @author  Aziz Hendricks
+ * @version 1.0
+ * @since   2016-09-06
  */
 public class SmoothUtil
 {
 
     /**
      * Smooth: replace values smaller than a minimum and larger with a maximum with the average of their neighbours.
-     * @param inputArray
-     * @param smoothMin
-     * @param smoothMax
+     * @param inputArray The input array that must be manipulated by the function
+     * @param smoothMin The minimum value that must be compared to for smoothing eligibility
+     * @param smoothMax The maximum value that must be compared to for smoothing eligibility
      * @return
      */
         public double [] smooth(double [] inputArray, int smoothMin, int smoothMax){

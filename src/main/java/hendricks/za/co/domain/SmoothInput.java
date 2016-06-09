@@ -1,7 +1,11 @@
 package hendricks.za.co.domain;
 
 /**
- * Created by aziz on 2016/06/07.
+ * DTO representation for Smooth values used for REST API transport
+ *
+ * @author  Aziz Hendricks
+ * @version 1.0
+ * @since   2016-09-06
  */
 public class SmoothInput {
 

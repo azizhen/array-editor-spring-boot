@@ -1,9 +1,22 @@
 package hendricks.za.co.arrayutils;
 
 /**
- * Created by aziz on 2016/06/07.
+ * Array utility responsible for filling arrays
+ *
+ * @author  Aziz Hendricks
+ * @version 1.0
+ * @since   2016-09-06
  */
 public class FillUtil {
+
+    /**
+     * Similar to replace: Starting at a given index in an array, replace adjacent elements if their value is
+     * the same (similar to the "paint bucket" fill tool in image editing software)
+     * @param inputArray The input array that must be manipulated by the function
+     * @param arrayIndex The given index that must be used as the anchor for replacing adjacent elements
+     * @param fillValue The value to apply the fill to
+     * @return
+     */
     public int[] fill(int[] inputArray, int arrayIndex, int fillValue) {
 
         validateInputValues(inputArray, arrayIndex);
