@@ -18,6 +18,5 @@ public class ReplaceUtilTest {
         assertEquals(outputArray[1], 4);
         assertEquals(outputArray[2], 3);
 
-
     }
 }

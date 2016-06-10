@@ -21,6 +21,30 @@ public class CropUtil {
      * @return The manipuated array after cropping has been applied
      */
     public int [] cropArray(int [] inputArray, int cropStartPosition, int cropEndPosition){
-       return Arrays.copyOfRange(inputArray, cropStartPosition, cropEndPosition);
+
+        validateInputValues(inputArray);
+
+        //If the cropPosition is less than index zero or higher than length, then default the values
+        cropStartPosition = setDefaultsOnCropPosition(inputArray, cropStartPosition);
+        cropEndPosition = setDefaultsOnCropPosition(inputArray, cropEndPosition);
+
+        return Arrays.copyOfRange(inputArray, cropStartPosition, cropEndPosition);
+    }
+
+    private int setDefaultsOnCropPosition(int[] inputArray, int cropPosition) {
+        if(cropPosition < 0){
+            cropPosition = 0;
+        }
+        if(cropPosition >= inputArray.length){
+            cropPosition = inputArray.length - 1;
+        }
+        return cropPosition;
+    }
+
+    private void validateInputValues(int[] inputArray) {
+
+        if(inputArray == null){
+            throw new IllegalArgumentException("The inputArray provided is null");
+        }
     }
 }
