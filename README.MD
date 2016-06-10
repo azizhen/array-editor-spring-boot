@@ -2,6 +2,8 @@
 
 Springboot REST API with Automated API Documentation Generation using Swagger.
 
+Example Deployment on Heroku - https://array-editor.herokuapp.com/swagger-ui.html
+
 The purpose of this project is to demonstrate the usage of Springboot to expose a Spring MVC REST API
 and generate API Documentation using Swagger.
 
@@ -32,10 +34,17 @@ Instructions:
 4. Confirm installation is correct by visiting the following url
 http://localhost:8080/swagger-ui.html
 
+It should be the same as the Heroku deployment
+https://array-editor.herokuapp.com/swagger-ui.html
+
 ## API Reference
 
 The API can be seen here once deployed and the REST API can be executed from this UI:
 
 http://localhost:8080/swagger-ui.html
+
+Can also be viewed online here:
+
+https://array-editor.herokuapp.com/swagger-ui.html
 
 Instructions on how to use the API and sample JSON input can be found in Swagger UI.
