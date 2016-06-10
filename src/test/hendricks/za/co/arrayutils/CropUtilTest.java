@@ -6,7 +6,11 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 /**
- * Created by aziz on 2016/06/06.
+ * Test Crop Util Functionality
+ *
+ * @author  Aziz Hendricks
+ * @version 1.0
+ * @since   2016-09-06
  */
 public class CropUtilTest {
 

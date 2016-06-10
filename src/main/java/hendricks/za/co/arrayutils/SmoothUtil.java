@@ -18,6 +18,9 @@ public class SmoothUtil
      * @return
      */
         public double [] smooth(double [] inputArray, int smoothMin, int smoothMax){
+
+            validateInputValues(inputArray);
+
             for(int i = 0;  i<inputArray.length; i++){
                if(inputArray[i] < smoothMin || inputArray[i] > smoothMax){
 
@@ -52,5 +55,12 @@ public class SmoothUtil
 
     private double calculateAverage(double leftNeighbour, double rightNeighbour) {
         return (leftNeighbour + rightNeighbour)/2;
+    }
+
+    private void validateInputValues(double[] inputArray) {
+
+        if(inputArray == null){
+            throw new IllegalArgumentException("The inputArray provided is null");
+        }
     }
 }

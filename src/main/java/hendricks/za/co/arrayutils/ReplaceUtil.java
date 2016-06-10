@@ -17,11 +17,21 @@ public class ReplaceUtil {
      * @return
      */
     public int [] replaceValuesInArray(int [] inputArray, int valueToReplace, int replacementValue){
+
+        validateInputValues(inputArray);
+
         for(int i = 0;  i<inputArray.length; i++){
             if(inputArray[i] == valueToReplace){
                 inputArray[i] = replacementValue;
             }
         }
         return inputArray;
+    }
+
+    private void validateInputValues(int[] inputArray) {
+
+        if(inputArray == null){
+            throw new IllegalArgumentException("The inputArray provided is null");
+        }
     }
 }
